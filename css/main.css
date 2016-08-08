@@ -15,7 +15,7 @@ body{
 	font-family:'Open Sans',Arial,sans-serif;
 	background:#FFF;
 	font-weight:300;
-	height:100%;
+	height:75%;
 	margin:0;
 	padding:0px;
 	color:#94a3a8;
@@ -133,7 +133,7 @@ a:hover,a:focus{color:#5173bd;}
 #one{
 	background-image:url("../images/footer-logo.png");
 }
-.masthead .container{
+.masthead .{
 	animation:fadein 2s;
 	-moz-animation:fadein 2s;
 	-webkit-animation:fadein 2s;

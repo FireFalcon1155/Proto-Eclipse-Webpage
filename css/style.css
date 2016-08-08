@@ -60,7 +60,6 @@ body {
 	font-size:14px;
 	font-weight:normal;
 	color:#888888;
-	margin:0;
 }
 h2{
 	font-size:34px;
@@ -165,7 +164,7 @@ color: #fff;
 	color:#7cc576 !important;
 	background:#fff;
 }
-
+copyright
 .link:active, .link:focus {
 	background: #7cc576;
 	text-decoration:none;
@@ -742,9 +741,11 @@ border: 2px solid #fff;
 
 .footer{
 	background:url(../images/pw_maze_black_2X.png) left top repeat;
-	padding: 0px;
-	margin: 0px;
-	
+	width: 100%;
+	min-width: 974px;
+	padding-left: 0px;
+	padding-right: 0px;
+
 }
 .footer-logo{
 	margin:15px auto 35px;

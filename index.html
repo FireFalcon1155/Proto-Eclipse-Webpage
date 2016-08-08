@@ -32,31 +32,19 @@
     <! -- ******************** MASTHEAD SECTION ******************** -->	
 	<main id="top" class="masthead" role="main">
 		<div class="container">
-			<div class="logo"> <a href="index.html#"><img src="images/logo.png" alt="logo"></a>
+			<div class="logo"> <a href="index.html#"><img src="images/bottomImg.png" alt="logo"></a>
 			</div>
- 
 			<h1><strong>Proto Eclipse Technology Corporation <br> </strong></h1>
-			<h3 style="color:white;">The Most Powerful Way To Launch Your Product.</h3>
- 
-			<div class="row">
-				<div class="col-md-6 col-sm-12 col-md-offset-3 subscribe">
-					<form class="form-horizontal" role="form" action="subscribe.php" id="subscribeForm" method="POST">
-						<div class="form-group">
-							<div class="col-md-7 col-sm-6 col-sm-offset-1 col-md-offset-0">
-								<input class="form-control input-lg" name="email" type="email" id="address" placeholder="Enter your email" data-validate="validate(required, email)" required="required">
-							</div>
-							<div class="col-md-5 col-sm-4">
-								<button type="submit" class="btn btn-success btn-lg" onclick="sendButton()" >GET EARLY ACCESS</button>
-							</div>
-						</div>
-					</form>
-					<span id="result" class="alertMsg"></span> </div>
-				</div>
- 
+			<h3 style="color:white;">The Most Powerful Way To Launch Your Product.</h3><br>
+			<div class="">
+			<button  style="display:block, left:200px;" class="btn btn-success btn-lg" id="getStarted" >GET EARLY ACCESS</button>
+			</div><br>
+ 			<div style="bottom:10px;" >
 				<a href="index.html#explore" class="scrollto">
 				<p>SCROLL DOWN TO EXPLORE</p>
 				<p class="scrollto--arrow"><img src="images/scroll_down.png" alt="scroll down arrow"></p>
 				</a>
+			</div>
 		</div><! --/container -->
 	</main><! --/main -->
  
@@ -71,7 +59,7 @@
 		
 		<section class="row heroimg breath">
 			<div class="col-md-12 text-center"> 
-				<img src="images/flat-mockup-template.png" alt="flat-mockup-template">
+				<img src="images/flat-mockup-template.png" id="targetImage" alt="flat-mockup-template">
 			</div>
 		</section><! --/section -->
 		<section class="row features">
@@ -240,12 +228,11 @@
 </div>
 <footer class="footer">
     <div class="container">
-        <div class="footer-logo"><a href="#"><img src="images/footer-logo.png" alt=""></a></div>
+        <div class="footer-logo"><a href="#"><img src="images/bottomImg.png" alt=""></a></div>
         <span class="copyright">Copyright © 2015 | <a href="http://bootstraptaste.com/">Bootstrap Themes</a> by BootstrapTaste</span>
     </div>
 </footer> 
   	    <! -- ******************** TESTIMONIALS SECTION ******************** -->	 
-<section class="main-section contact" id="contact">
 	
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.js"></script>
@@ -265,7 +252,9 @@
      event.preventDefault();
       });
   });
-        
+  $("#getStarted").click(function () {
+		$("html, body").scrollTop($(".section-title").offset().top) 
+  })
 
 </script>
  
